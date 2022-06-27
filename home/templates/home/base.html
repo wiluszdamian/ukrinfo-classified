@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if title %}
+      <title>UkrInfo - {{ title }}</title>
+    {% else %}
+      <title>UkrInfo</title>
+    {% endif %}
+
+    <!-- Flowbite -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+
+  </head>
+  <body>
+    <div>
+    {% block content %}{% endblock %}
+    </div>
+    <!-- Flowbite -->
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+  </body>
+</html>
