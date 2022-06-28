@@ -1,25 +1,66 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="./static/img/flavicon.webp">
 
     {% if title %}
-      <title>UkrInfo - {{ title }}</title>
+      <title>UKR-INFO: {{ title }}</title>
     {% else %}
-      <title>UkrInfo</title>
+      <title>UKR-INFO #StandWithUkraine</title>
     {% endif %}
 
     <!-- Flowbite -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
 
+    <!--Test -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./static/css/main.css" />
   </head>
   <body>
-    <div>
+    <header>
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="#" class="flex items-center">
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">UKR-INFO</span>
+        </a>
+
+        {% if user.is_authenticated %}
+        <!--TODO: Adds buttons and logic for logged in users -->
+
+        {% else %}
+          <div class="flex md:order-2">
+            <button type="button" class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 mr-2 mb-2" href="admin">
+              <a href="">Log In</a>
+            </button>
+            <button type="button" class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 mr-2 mb-2">
+              <a href="">Sign In</a>
+            </button>
+            <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 mr-2 mb-2" type="button">Language <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                      <img src="./static/img/english.webp" style="width: 20%; height: 20%;">
+                      English
+                    </a>
+                  </li>
+                </ul>
+          </div>
+        {% endif %}
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="content">
     {% block content %}{% endblock %}
-    </div>
-    <!-- Flowbite -->
-    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+  </div>
+  <!-- Flowbite -->
+  <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
   </body>
 </html>
