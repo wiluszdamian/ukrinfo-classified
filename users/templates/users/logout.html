@@ -1,0 +1,13 @@
+{% extends "home/base.html" %}
+{% block content %}
+<div style="margin-left: 20%; margin-right: 20%;">
+    <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
+        <span class="font-medium">Pomyślnie wylogowano!</span> Wylogowałeś się przez pomyłkę? Zaloguj się jeszcze raz...
+      </div>
+    <div style="margin-left: 20%; margin-right: 20%;">
+        <form action="{% url 'login' %}">
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Zaloguj się</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

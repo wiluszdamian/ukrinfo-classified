@@ -21,9 +21,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./static/css/main.css" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   </head>
   <body>
     <header>
@@ -36,7 +33,7 @@
         {% if user.is_authenticated %}
         <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown">
           <div class="py-3 px-4">
-            <span class="block text-sm text-gray-900 dark:text-white">{{ user.first_name }}</span>
+            <span class="block text-sm text-gray-900 dark:text-white">Test</span>
             <span class="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
           </div>
           <ul class="py-1" aria-labelledby="dropdown">
@@ -56,8 +53,8 @@
         </div>
         {% else %}
           <div class="flex md:order-2">
-            <button type="button" class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 mr-2 mb-2" href="admin">
-              <a href="">Log In</a>
+            <button type="submit" class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 mr-2 mb-2" href="admin">
+              <a href="/login/">Log In</a>
             </button>
             <button type="button" class="text-white bg-[#050708] hover:bg-[#050708]/90 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#050708]/50 dark:hover:bg-[#050708]/30 mr-2 mb-2">
               <a href="/register/">Sign In</a>
