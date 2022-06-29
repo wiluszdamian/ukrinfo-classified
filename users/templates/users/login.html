@@ -1,0 +1,19 @@
+{% extends "home/base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}Jasny Gwint{% endblock %}
+{% block content %}
+<div style="position: absolute; left: 40%; width: 20%; text-align: center;">
+<form method="POST">
+    {% csrf_token %}
+    <div class="mb-6">
+        {{ form|crispy }}
+    </div>
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Zaloguj się</button>
+  </form><br />
+  <div style="">
+    <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <a href="/register/">Załóż konto</a>
+    </button>
+  </div>
+</div>
+{% endblock content%}

@@ -1,0 +1,39 @@
+body {
+}
+
+main {
+    display: inline-block;
+    width: 20%;
+}
+
+.content {
+    margin-left: 10%;
+}
+
+.posts {
+    display: inline-block;
+}
+
+.categories {
+    display: inline-block;
+}
+
+.categories-homepage {
+    margin-left: 20%;
+}
+
+.categories-homepage-two {
+    margin-left: 35%;
+}
+
+span .data-author {
+    margin: 0%;
+}
+
+.success-alert {
+    margin-left: 10%;
+    width: 40%;
+}
+
+
+
