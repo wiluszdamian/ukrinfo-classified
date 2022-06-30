@@ -13,6 +13,17 @@ input[type="text"] {
     color: black;
 }
 
+input[type="text"] {
+  color: black;
+}
+
+.post-form {
+  color: white;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 .content {
   margin-left: 10%;
 }

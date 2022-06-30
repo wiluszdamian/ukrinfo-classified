@@ -10,7 +10,7 @@ def register(request):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'Konto {username} zostało stworzone!')
+            messages.success(request, f'Konto {username} zostało stworzone! Możesz się zalogować.')
             return redirect('home-home')
     else:
         form = UserRegisterForm()
@@ -23,7 +23,7 @@ def profile(request):
         u_form = UserUpdateForm(request.POST, instance=request.user)
         if u_form.is_valid():
             u_form.save()
-            messages.success(request, f'Your account has been updated!')
+            messages.success(request, f'Profil został zaktualizowany!')
             return redirect('profile')
 
     else:

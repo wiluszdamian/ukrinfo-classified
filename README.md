@@ -2,10 +2,16 @@
 W trakcie dodawania..
 
 ## ToDo
-W trakcie dodawania..
+- [x] System logowania oraz rejestracji - potrzebne dane: nazwa użytkownika, adres e-mail oraz hasło.
+- [x] System edycji profilu użytkownika - użytkownik może edytować nazwę użytkownika oraz e-mail.
+- [x] System dodawania ogłoszeń - potrzebne dane: tytuł, opis, kategoria, typ - informacje o autorze oraz dacie wczytywane są automatycznie.
+- [] System edytowania ogłoszeń - w trakcie budowy.
+- [] Filtrowanie po kategoriach - w trakcie budowy.
 
 ## Wykorzystane technologie
-W trakcie dodawania
+- Django 3.0.14 
+- Python 3.10.4 
+- Flowbite 1.4.7 (UI Kit)
 
 ## Instalacja
 W trakcie dodawania..
