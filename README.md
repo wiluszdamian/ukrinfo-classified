@@ -18,7 +18,6 @@ W trakcie dodawania..
 1. Instalacja potrzebnych pakietów
 ```
 pip install requirements.txt 
-
 ```
 
 2. Migracja bazy
