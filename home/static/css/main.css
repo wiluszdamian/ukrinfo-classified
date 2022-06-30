@@ -17,6 +17,17 @@ input[type="text"] {
   margin-left: 10%;
 }
 
+.profile-button-edit {
+    text-align: center;
+    margin-Left: 40%;
+    margin-right: 30%;
+}
+
+.profile-button-form {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .profile-form {
     margin-top: 2%;
     position: absolute; 

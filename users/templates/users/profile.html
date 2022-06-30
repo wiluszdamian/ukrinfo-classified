@@ -1,4 +1,4 @@
-{% extends "home/base.html" %} {% block content %}
+{% extends "home/base.html" %} {% block content %}{% load crispy_forms_tags %}
 <div class="profile-form">
   <div
     class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
@@ -17,11 +17,30 @@
         >E-mail: {{ user.email }}</span
       >
       <div class="flex mt-4 space-x-3 lg:mt-6">
-        <a href="#" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Edycja
-        </a>
+      </div>
+    </div>
+    <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+      <h2 id="accordion-flush-heading-3">
+        <button type="button" class="flex justify-between items-center py-5 w-full font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+          <a href="#" class="profile-button-edit inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Edycja
+          </a>
+        </button>
+      </h2>
+      <div id="accordion-flush-body-3" class="hidden profile-button-form" aria-labelledby="accordion-flush-heading-3">
+        <form method="POST">
+          {% csrf_token %}
+          <div class="mb-6">
+            <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nazwa użytkownika</label>
+            <input type="username" id="id_username" name="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="{{ user.username }}">
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Adres e-mail</label>
+            <input type="email" id="id_email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="{{ user.email }}" required>
+          </div>
+          <button type="submit" class="profile-button-edit text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Zapisz</button>
+        </form>
       </div>
     </div>
   </div>
-</div>
 {% endblock content %}
