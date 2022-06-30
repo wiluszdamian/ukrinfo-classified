@@ -1,39 +1,96 @@
 body {
+    background-color: #2C3639;
+    font-family: Roboto;
+    font-size: 19px;
 }
 
 main {
-    display: inline-block;
-    width: 20%;
+  display: inline-block;
+  width: 20%;
+}
+
+input[type="text"] {
+    color: black;
 }
 
 .content {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
-.posts {
-    display: inline-block;
+.profile-form {
+    margin-top: 2%;
+    position: absolute; 
+    left: 40%; 
+    width: 20%
 }
 
-.categories {
-    display: inline-block;
+.login-form {
+    margin-top: 2%;
+}
+
+.login-alert-form {
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.logout-alert-form {
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.loginForm {
+    color: white;
+}
+
+.register-label {
+    color: white;
+}
+
+.form-register {
+    width: 30%;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.content-section {
+    color: white;
+    position: absolute; 
+    left: 40%; 
+    width: 20%; 
+    display: inline;
+}
+
+.login-form { 
+    position: absolute; 
+    left: 40%; 
+    width: 20%; 
+    text-align: center;
+}
+
+.login-form-second {
+    color: white;
 }
 
 .categories-homepage {
-    margin-left: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1%
 }
 
 .categories-homepage-two {
-    margin-left: 35%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 1%;
 }
 
 span .data-author {
-    margin: 0%;
+  margin: 0%;
 }
 
 .success-alert {
-    margin-left: 10%;
-    width: 40%;
+  margin-left: 10%;
+  width: 40%;
 }
-
-
-
