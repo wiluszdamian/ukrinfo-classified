@@ -13,5 +13,20 @@ W trakcie dodawania..
 - Python 3.10.4 
 - Flowbite 1.4.7 (UI Kit)
 
+
 ## Instalacja
-W trakcie dodawania..
+1. Instalacja potrzebnych pakietów
+```
+pip install requirements.txt 
+
+```
+
+2. Migracja bazy
+```
+python manage.py migrate
+```
+
+3. Uruchomienie projektu
+```
+python manage.py runserver
+```
