@@ -26,5 +26,5 @@ python manage.py runserver
 ```
 
 
-## Live dom
+## Live demo
 W budowie...
