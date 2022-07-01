@@ -5,7 +5,7 @@ W trakcie dodawania..
 - [x] System logowania oraz rejestracji - potrzebne dane: nazwa użytkownika, adres e-mail oraz hasło.
 - [x] System edycji profilu użytkownika - użytkownik może edytować nazwę użytkownika oraz e-mail.
 - [x] System dodawania ogłoszeń - potrzebne dane: tytuł, opis, kategoria, typ - informacje o autorze oraz dacie wczytywane są automatycznie.
-- [] System edytowania ogłoszeń - w trakcie budowy.
+- [x] System edytowania ogłoszeń - w trakcie budowy.
 - [] Filtrowanie po kategoriach - w trakcie budowy.
 
 ## Wykorzystane technologie
@@ -14,18 +14,17 @@ W trakcie dodawania..
 - Flowbite 1.4.7 (UI Kit)
 
 
-## Instalacja
+## Uruchomienie lokalne
 1. Instalacja potrzebnych pakietów
 ```
 pip install requirements.txt 
 ```
 
-2. Migracja bazy
-```
-python manage.py migrate
-```
-
-3. Uruchomienie projektu
+2. Uruchomienie projektu
 ```
 python manage.py runserver
 ```
+
+
+## Live dom
+W budowie...
