@@ -10,7 +10,7 @@ def register(request):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'Konto {username} zostało stworzone! Możesz się zalogować.')
+            messages.success(request, f'Konto {username} zostało stworzone! Teraz możesz się zalogować.')
             return redirect('home-home')
     else:
         form = UserRegisterForm()

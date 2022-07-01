@@ -39,7 +39,7 @@ input[type="text"] {
   margin-right: 2%;
 }
 
-.profile-form {
+.profile-form, .post-detail, .post-delete {
     margin-top: 2%;
     position: absolute; 
     left: 40%; 
