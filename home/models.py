@@ -9,6 +9,8 @@ class Post(models.Model):
     category = models.TextField()
     accountType = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
+    city = models.TextField()
+    number = models.IntegerField()
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):

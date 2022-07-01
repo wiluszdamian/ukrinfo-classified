@@ -6,15 +6,19 @@
     <div class="post-form">
         <div class="mb-6">
         <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" style="color: white;">Tytuł</label>
-        <input type="title" id="id_title" name="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tytuł" required>
+        <input type="title" id="id_title" name="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tytuł" value="{{ object.title }}" required>
         </div>
         <div class="mb-6">
-            <label for="content" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400" style="color: white;">Your message</label>
-            <textarea id="id_content" rows="4" name="content" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Opis.." required></textarea>
+            <label for="content" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400" style="color: white;">Opis</label>
+            <textarea id="id_content" rows="4" name="content" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Opis.." name="{{ object.content }}" required></textarea>
+        </div>
+        <div class="mb-6">
+            <label for="city" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" style="color: white;">Miasto</label>
+            <input type="city" id="city" name="city" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Miasto" value="{{ object.city }}" required>
         </div>
         <div class="mb-6">
             <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400" style="color: white;">Kategoria</label>
-            <select id="id_category" name="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+            <select id="id_category" name="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 " name="{{ object.category }}" required>
                 <option>Praca</option>
                 <option>Mieszkanie</option>
                 <option>Moda</option>
@@ -26,10 +30,14 @@
         </div>
         <div class="mb-6">
             <label for="accountType" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400" style="color: white;">Rodzaj ogłoszenia</label>
-            <select id="id_accountType" name="accountType" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+            <select id="id_accountType" name="accountType" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{ object.accountType }}" required>
                 <option>Szukam</option>
                 <option>Oferuje</option>
             </select>            
+        </div>
+        <div class="mb-6">
+            <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" style="color: white;">Numer telefonu</label>
+            <input type="number" id="number" name="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" value="{{ object.phone }}"required>
         </div>
         <button type="submit" class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" required>Dodaj</button>
     </div>

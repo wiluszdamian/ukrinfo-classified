@@ -34,6 +34,10 @@ input[type="text"] {
     margin-right: 30%;
 }
 
+.phone-number-text {
+  size: 8px;
+}
+
 .profile-button-form {
   margin-left: 2%;
   margin-right: 2%;
