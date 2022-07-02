@@ -1,4 +1,4 @@
-{% extends "home/base.html" %} {% load crispy_forms_tags %} {% block content %}
+{% extends "home/base.html" %}{% block content %}
 <div class="form-register">
   <form method="POST">
     {% csrf_token %}
@@ -74,7 +74,7 @@
       <label
         for="remember"
         class="register-label ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-        >Zgadzam się na przetwarzanie danych osobowych</label
+        >Akceptuje regulamin</label
       >
     </div>
     <button
