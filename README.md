@@ -1,5 +1,4 @@
 # Portal z ogłoszeniami UKR-INFO
-W trakcie dodawania..
 
 ## ToDo
 - [x] System logowania oraz rejestracji - potrzebne dane: nazwa użytkownika, adres e-mail oraz hasło.
