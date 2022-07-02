@@ -1,7 +1,7 @@
 body {
-    background-color: #2C3639;
-    font-family: Roboto;
-    font-size: 19px;
+  background-color: #2c3639;
+  font-family: Roboto;
+  font-size: 19px;
 }
 
 main {
@@ -10,7 +10,7 @@ main {
 }
 
 input[type="text"] {
-    color: black;
+  color: black;
 }
 
 input[type="text"] {
@@ -24,14 +24,15 @@ input[type="text"] {
   margin-right: 20%;
 }
 
+
 .content {
   margin-left: 10%;
 }
 
 .profile-button-edit {
-    text-align: center;
-    margin-Left: 40%;
-    margin-right: 30%;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 30%;
 }
 
 .phone-number-text {
@@ -43,67 +44,69 @@ input[type="text"] {
   margin-right: 2%;
 }
 
-.profile-form, .post-detail, .post-delete {
-    margin-top: 2%;
-    position: absolute; 
-    left: 40%; 
-    width: 20%
+.profile-form,
+.post-detail,
+.post-delete {
+  margin-top: 2%;
+  position: absolute;
+  left: 40%;
+  width: 20%;
 }
 
 .login-form {
-    margin-top: 2%;
+  margin-top: 2%;
 }
 
 .login-alert-form {
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .logout-alert-form {
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .loginForm {
-    color: white;
+  color: white;
 }
 
 .register-label {
-    color: white;
+  color: white;
 }
 
 .form-register {
-    width: 30%;
-    margin-top: 2%;
-    margin-left: 30%;
-    margin-right: 30%;
+  width: 30%;
+  margin-top: 2%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .content-section {
-    color: white;
-    position: absolute; 
-    left: 40%; 
-    width: 20%; 
-    display: inline;
+  color: white;
+  position: absolute;
+  left: 40%;
+  width: 20%;
+  display: inline;
 }
 
-.login-form { 
-    position: absolute; 
-    left: 40%; 
-    width: 20%; 
-    text-align: center;
+.login-form {
+  position: absolute;
+  left: 40%;
+  width: 20%;
+  text-align: center;
 }
 
 .login-form-second {
-    color: white;
+  color: white;
 }
 
 .categories-homepage {
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 1%
+  margin-top: 1%;
 }
 
 .categories-homepage-two {
