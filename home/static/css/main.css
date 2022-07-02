@@ -38,6 +38,10 @@ input[type="text"] {
   size: 8px;
 }
 
+.button-edit {
+  display: inline-block;
+}
+
 .profile-button-form {
   margin-left: 2%;
   margin-right: 2%;
