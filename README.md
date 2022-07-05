@@ -4,7 +4,7 @@
 - [x] System logowania oraz rejestracji - potrzebne dane: nazwa użytkownika, adres e-mail oraz hasło.
 - [x] System edycji profilu użytkownika - użytkownik może edytować nazwę użytkownika oraz e-mail.
 - [x] System dodawania ogłoszeń - potrzebne dane: tytuł, opis, kategoria, typ - informacje o autorze oraz dacie wczytywane są automatycznie.
-- [x] System edytowania ogłoszeń - w trakcie budowy.
+- [x] System edytowania ogłoszeń 
 
 ## Wykorzystane technologie
 - Django 3.0.14 
